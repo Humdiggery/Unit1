@@ -1,0 +1,49 @@
+Algorithm 1
+
+[2,7,3,9,2] => [v1,v2,v3,v4]
+
+Do until counter(i) = 0 for all comparisons (v1/v2, v2/v3, v3/v4, v4/v5)
+if counter(i) = 1, then switch places for variables
+
+1. counter(1)=0, initial state: 2,7,3,9,2
+2. counter (2)= 0, v1<v2, 2,7,3,9,2
+3.counter (3)=1, v2>v3, 2,3,7,9,2
+4. counter (4)=0, v3<v4, 2,3,7,9,2
+5. counter (5)= 1, v4>v5, 2,3,7,2,9
+6. counter (1)= 0, v1<v2, 2,3,7,2,9
+7. counter (2)= 0, v2<v3, 2,3,7,2,9
+8.counter (3) = 1, v3>v4, 2,3,2,7,9
+9. counter (4) = 0, v4>v5, 2,3,2,7,9
+10. counter (1) = 0, v1<v2, 2,3,2,7,9
+11. counter (2) =1, v2>v3, 2,2,3,7,9
+12. counter (3) =0, v3<v4, 2,2,3,7,9
+13. counter (4) =0, v4<v5, 2,2,3,7,9
+14. counter (1)=0
+15. counter (2)=1,2,
+16. counter (3) = 0
+17. counter (4)=0
+
+done when all comparisons = 0
+
+
+Algorithm 2el
+
+i=0
+
+While i<100:
+    if i%3 = 0 and i%5 =0:
+        then 'fizzbuzz'
+        else if i%3:
+            then  print "fizz"
+        else if i%5 = 0:
+            then print "buzz"
+        else print i
+            i+=1
+    if i>=100:
+        break
+
+
+
+
+
+
